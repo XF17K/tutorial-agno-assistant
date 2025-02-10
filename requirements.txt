@@ -1,0 +1,5 @@
+agno
+openai
+lancedb
+tavily-python
+duckduckgo-search
