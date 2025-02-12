@@ -1,0 +1,8 @@
+agno==1.0.5
+openai
+lancedb
+tavily-python
+duckduckgo-search
+pandas
+python-dotenv
+rich
