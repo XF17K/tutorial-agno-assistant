@@ -22,11 +22,11 @@ LLM_MAX_ATTEMPTS = 1
 # Information for vectorstore
 INFOS = [
     "XStudios was founded in Istanbul in 2050.",
-    "The founder of XStudios is Scarlett.",
-    "XStudios has published 14 games on the Steam platform.",
-    "XStudios is publishing games on the computer platform.",
-    "Cities where XStudios has offices: Istanbul (main headquarters), San Francisco, New York, London, Paris, Madrid, Rome.",
-    "XStudios has 226 employees.",
+    "XStudios was founded by Scarlett.",
+    "XStudios has published 14 games on Steam.",
+    "XStudios develops games for PC.",
+    "XStudios has offices in Istanbul (headquarters), San Francisco, New York, London, Paris, Madrid, and Rome.",
+    "XStudios employs 226 people.",
 ]
 
 # Messages
