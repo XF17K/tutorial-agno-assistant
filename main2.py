@@ -5,7 +5,7 @@ from agno.models.openai import OpenAIChat
 from agno.agent import RunResponse  # noqa
 from agno.embedder.openai import OpenAIEmbedder
 from agno.vectordb.lancedb import LanceDb, SearchType
-from agno.tools.tavily import TavilyTools
+from agno.tools.duckduckgo import DuckDuckGoTools
 from models.verifyLLMResponseModel import VerifyLLMResponseModel
 from rich.console import Console
 from rich.panel import Panel
@@ -47,7 +47,7 @@ def CreateAgent():
     agent = Agent(
     model = OpenAIChat(id = "gpt-4o-mini"),
     knowledge = knowledgeBase,
-    tools = [TavilyTools()],
+    tools = [DuckDuckGoTools()],
     add_references = True,
     search_knowledge = True,
     show_tool_calls = True,
@@ -65,7 +65,7 @@ def CreateAgent():
     - Only state what is explicitly mentioned
 
     3. If information is NOT found in the knowledge base:
-    - Use Tavily to search the internet
+    - Use DuckDuckGo to search the internet
     - Clearly indicate that the information comes from web search
     - Provide a clear and concise answer based on the search results
 
